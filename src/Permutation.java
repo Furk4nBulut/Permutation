@@ -11,15 +11,15 @@ public class Permutation {
         String input = scan.next();
         result = generatePermutations(input);
         permutations(result);
-        System.out.println("The factorial is: " + factorial(counter));
+        System.out.println("The factorial is: " + factorial());
     }
-    public static int counter=0; //declared a public counter to use in factorial method.
+   // public static int counter=0; //declared a public counter to use in factorial method.
 
    public static HashSet<String> result = new HashSet<String>(); // declared a hashset list.
                                                                   // To use in methods.
-    public static int factorial (int counter) {
-                return counter;
-    } // For calculating factorial.
+    public static int factorial () {
+                return result.size();
+    } // For printing factorial.
 
     public static HashSet<String> generatePermutations(String input) { // this method is generating variatons of permutation.
         HashSet<String> result = new HashSet<String>(); // Ask your teacher(!)
@@ -35,7 +35,7 @@ public class Permutation {
                     result.add(letter + addingPermutation);
                 }
             }
-            counter = result.size(); // the size of list is created.
+         //   counter = result.size(); // the size of list is created.
                                     // (this mean is the number of variations are also calculated due to the hashset.)
             return result; //hashset  list created
         }

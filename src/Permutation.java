@@ -1,6 +1,6 @@
 import java.util.HashSet;
 import java.util.Scanner;
-public class Main {
+public class Permutation {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.print("Input the string which you want to find all permutations: ");

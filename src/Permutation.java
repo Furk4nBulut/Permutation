@@ -1,4 +1,5 @@
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Scanner;
 public class Permutation {
     public static void main(String[] args) {
@@ -40,10 +41,9 @@ public class Permutation {
         }
     }
     public static void permutations(HashSet<String> result){ // this method is using for print variatons without 'list'.
-        int index = 0;
-        for (String variation : result) {
-            System.out.println(variation);
-            index++;
+        Iterator itr = result.iterator();
+        while (itr.hasNext() ){
+            System.out.println(itr.next());
         }
     }
 

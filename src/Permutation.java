@@ -31,8 +31,6 @@ public class Permutation {
     }
     public static void permutations(HashSet<String> result){
         result.forEach(element -> System.out.println(element));
-
         }
-
     }
 
